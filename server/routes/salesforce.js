@@ -73,8 +73,8 @@ router.delete("/delete-account/:id", async(req,res) => {
     }
 })
 function connection(req, res, next){
-    const username = '';
-      const password = '';
+    const username = 'your user name';
+      const password = 'password+security token';
       conn.login(username, password, function(err, userInfo) {
         if (err) { return console.error(err); }
         console.log(conn.accessToken);
